@@ -7,3 +7,11 @@ pytorch 2.0.0<br>
 pandas 2.0.0<br>
 scikit-image 0.20.0<br>
 matplotlib 3.7.1<br>
+
+**Below are the instrunctions for the above packages**
+```
+pip3 install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
+pip install pandas==2.0.0
+pip install scikit-image==0.20.0
+pip install matplotlib==3.7.1
+```
