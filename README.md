@@ -6,3 +6,4 @@ Python 3.9<br>
 pytorch 2.0.0<br>
 pandas 2.0.0<br>
 scikit-image 0.20.0<br>
+matplotlib 3.7.1<br>
