@@ -2,7 +2,7 @@
 
 ## installation requirements<br>
 (Python 3.10 is not supporting pytorch , downgrade python version from 3.7 to 3.9)<br>
-Python 3.9(link for[how to install python 3.9])<br>
+Python 3.9(link for[how to install python 3.9](https://github.com/sandip761/cnn_classification/blob/main/InstallPython39.md))<br>
 pytorch 2.0.0<br>
 pandas 2.0.0<br>
 scikit-image 0.20.0<br>
