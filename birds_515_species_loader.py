@@ -13,3 +13,12 @@ import warnings
 warnings.filterwarnings("ignore")
 
 plt.ion()
+
+class BirdsSpeciesDataset(Dataset):
+    
+
+    def __init__(self, data_frame, root_dir, transform=None):
+
+        self.data_frame = data_frame;
+        self.root_dir = root_dir;
+        self.transform = transform;
