@@ -22,3 +22,21 @@ class BirdsSpeciesDataset(Dataset):
         self.data_frame = data_frame;
         self.root_dir = root_dir;
         self.transform = transform;
+
+    def __len__(self):
+        return len(self.data_frame)
+    
+
+    def __getitem__(self, idx) :
+        if torch.is_tensor(idx):
+            idx = idx.tolist()
+        img_name = os.path.join(self.root_dir,
+                                self.landmarks_frame.iloc[idx, 0])
+        return super().__getitem__(idx)
+    
+birds_df = pd.read_csv('../birds.csv')
+birds_train_df = birds_df[birds_df['data set']=="train"]
+#print(len(birds_train_df))
+#print(len(birds_df))
+dataset_train = BirdsSpeciesDataset(birds_df, root_dir="../train", transform=None)
+print(dataset_train.__len__())
